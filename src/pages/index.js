@@ -42,7 +42,7 @@ const IndexPage = () => {
           <a
             href="https://github.com/shaunchander/personal-website/blob/master/temporary-portfolio.md"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             view my temporary portfolio on GitHub
           </a>{" "}
@@ -50,7 +50,7 @@ const IndexPage = () => {
           <a
             href="https://shaunchander.github.io/old-portfolio-website/"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             my old portfolio website
           </a>{" "}
@@ -78,7 +78,7 @@ const IndexPage = () => {
           <a
             href="https://github.com/shaunchander/personal-website"
             target="_blank"
-            rel="noopener"
+            rel="noopener noreferrer"
           >
             view this website’s source code
           </a>{" "}

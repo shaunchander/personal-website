@@ -10,6 +10,8 @@ import PropTypes from "prop-types"
 import Helmet from "react-helmet"
 import { useStaticQuery, graphql } from "gatsby"
 
+import oEmbed from "../static/oEmbed/oembed.json"
+
 function SEO({ description, lang, meta, title }) {
   const { site } = useStaticQuery(
     graphql`
@@ -45,6 +47,10 @@ function SEO({ description, lang, meta, title }) {
           content: site.siteMetadata.title,
         },
         {
+          property: `og:site_name`,
+          content: site.siteMetadata.title,
+        },
+        {
           property: `og:description`,
           content: metaDescription,
         },
@@ -73,7 +79,9 @@ function SEO({ description, lang, meta, title }) {
           content: metaDescription,
         },
       ].concat(meta)}
-    />
+    >
+      {/* <link type="application/json+oembed" href={oEmbed} /> */}
+    </Helmet>
   )
 }
 
