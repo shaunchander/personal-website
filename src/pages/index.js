@@ -39,11 +39,19 @@ const IndexPage = () => {
         </p>
         <p className="mb-5 lg:text-lg lg:mb-8">
           You can{" "}
-          <a href="#" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/shaunchander/personal-website/blob/master/temporary-portfolio.md"
+            target="_blank"
+            rel="noopener"
+          >
             view my temporary portfolio on GitHub
           </a>{" "}
           or go to{" "}
-          <a href="#" target="_blank" rel="noopener">
+          <a
+            href="https://shaunchander.github.io/old-portfolio-website/"
+            target="_blank"
+            rel="noopener"
+          >
             my old portfolio website
           </a>{" "}
           (
@@ -67,7 +75,11 @@ const IndexPage = () => {
 
         <p className="text-sm">
           Psst... you can{" "}
-          <a href="#" target="_blank" rel="noopener">
+          <a
+            href="https://github.com/shaunchander/personal-website"
+            target="_blank"
+            rel="noopener"
+          >
             view this website’s source code
           </a>{" "}
           if you’d like to!
