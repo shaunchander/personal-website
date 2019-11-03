@@ -3,8 +3,6 @@ import React, { useRef, useState } from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import indexStyle from "./index.module.css"
-
 const IndexPage = () => {
   const [discord, setDiscord] = useState("Athys#9347")
 
