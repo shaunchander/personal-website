@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Shaun's Personal Website`,
-    description: `Hey I'm Shaun! I'm a web developer that specializes in creating JAMStack websites as well as the Director over at Syncore LLC. Welcome to my personal website `,
-    author: `@shaunchander`,
-    thumbnail: `src/static/images/thumbnail.png`,
+    title: `Shaun Chander`,
+    description: `Hey I'm Shaun! I'm a web developer that specializes in creating JAMStack websites as well as the Director over at Syncore LLC. Visit my site to see my bio, portfolio, and contact information.`,
+    author: `Shaun Chander`,
+    url: "https://shaunchander.me",
+    thumbnail: `/images/thumbnail.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
