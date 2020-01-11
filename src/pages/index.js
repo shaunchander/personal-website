@@ -21,7 +21,7 @@ const IndexPage = () => {
 
   return (
     <Layout>
-      <SEO />
+      <SEO title="Under Construction" />
 
       <div className="z-10">
         <h1 className="text-4xl font-bold mb-8 lg:text-6xl">
