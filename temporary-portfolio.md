@@ -4,7 +4,7 @@ Welcome to my temporary portfolio, hosted straight out of a markdown file!
 
 https://dazzling-payne-a6ec2e.netlify.com/
 > Personal website for a client
-> Design by Chris Hughes (https://dribbble.com/ChrisHUX)
+> ,designed by Chris Hughes (https://dribbble.com/ChrisHUX)
 
 https://awesome-jepsen-03f676.netlify.com/
 > Website for StellarDev, a Minecraft plugin seller/distributor
