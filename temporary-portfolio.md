@@ -14,9 +14,6 @@ https://awesome-jepsen-03f676.netlify.com/
  https://mcpromo.site
 > MCPromo is a Minecraft-related advertisement service for content creators
 
-https://icarus.twilightgamez.net/#/
-
-> Icarus Discord bot's landing page
 
 https://relaxed-austin-6c97d0.netlify.com/
 
