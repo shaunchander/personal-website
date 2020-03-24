@@ -37,19 +37,27 @@ module.exports = {
       },
     },
     {
-      resolve: 'gatsby-plugin-eslint',
+      resolve: "gatsby-plugin-eslint",
       options: {
         test: /\.ts$|\.tsx$/,
         exclude: /(node_modules|.cache|public)/,
-        stages: ['develop', 'build-javascript'],
+        stages: ["develop", "build-javascript"],
         options: {
           emitWarning: true,
-          failOnError: false
-        }
-      }
-    }
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+          failOnError: false,
+        },
+      },
+    },
+    {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        custom: {
+          families: ["Jost"],
+          urls: ["/fonts/style.css"],
+        },
+      },
+    },
+
+    `gatsby-plugin-offline`,
   ],
 }
