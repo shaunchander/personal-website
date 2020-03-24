@@ -1,10 +1,7 @@
 import React, { ReactElement } from "react"
 
-
 function Index({}): ReactElement {
-  return (
-    
-  )
+  return <p>Hello World</p>
 }
 
 export default Index
