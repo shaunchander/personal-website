@@ -1,9 +1,18 @@
 import React from "react"
 
-interface Props {}
+// Component imports
+import Layout from "../components/Layout"
+import Section from "../components/Section"
+import Text from "../components/Text"
 
-const index = (props: Props) => {
-  return <div>Go build something great...</div>
+const index = () => {
+  return (
+    <Layout>
+      <Section>
+        <h1>Go build something great...</h1>
+      </Section>
+    </Layout>
+  )
 }
 
 export default index
