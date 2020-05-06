@@ -1,0 +1,6 @@
+Website created by Syncore LLC
+https://syn-core.com
+hello@syn-core.com
+
+/* TEAM */
+	<Role>: <firstName> <lastName>
