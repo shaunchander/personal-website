@@ -8,6 +8,8 @@
     "babel-preset-gatsby": "^0.4.1",
     "core-js": "^3.6.5",
     "gatsby-plugin-linaria": "^2.0.0",
+    "gatsby-plugin-netlify": "^2.3.2",
+    "gatsby-plugin-zeit-now": "^0.3.0",
     "linaria": "1.4.0-beta.3",
     "react": "16.13.1",
     "react-dom": "16.13.1",
