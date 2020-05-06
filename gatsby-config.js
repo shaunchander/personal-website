@@ -22,6 +22,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
+    `gatsby-plugin-linaria`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
