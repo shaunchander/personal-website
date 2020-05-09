@@ -5,13 +5,9 @@ interface Props {
   children: React.ReactElement
 }
 
-const Section = ({ className, children }: Props) => {
+const Section = ({ className = "", children }: Props) => {
   return (
-    <section
-      className={`container mx-auto ${className !== undefined && className}`}
-    >
-      {children}
-    </section>
+    <section className={`container mx-auto ${className}`}>{children}</section>
   )
 }
 
