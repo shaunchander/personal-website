@@ -2,7 +2,8 @@ module.exports = {
   siteMetadata: {
     title: `Gatsby Syncore Starter`,
     description: `Syncore's customized Gatsby starter based off of gatsby-typescript-tailwind-starter`,
-    author: `@gatsbyjs`,
+    siteUrl: `https://www.example.com`,
+    defaultImg: `static/images/...`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,7 +23,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-typescript`,
-    `gatsby-plugin-linaria`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
