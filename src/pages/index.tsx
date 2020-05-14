@@ -21,7 +21,7 @@ const index = () => {
             fill="#1D976C"
           />
         </svg>
-        <h1 className="mt-4 font-bold font-lg">syncore-gatsby-starter</h1>
+        <Text className="mt-4 font-bold font-lg">syncore-gatsby-starter</Text>
       </Section>
     </Layout>
   )
