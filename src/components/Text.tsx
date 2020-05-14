@@ -3,7 +3,7 @@ import React from "react"
 interface Props {
   variant?: string
   className?: string
-  children: string | React.ReactElement
+  children: string | React.ReactNode
 }
 
 const Text = ({ variant = "p", className = "", children }: Props) => {

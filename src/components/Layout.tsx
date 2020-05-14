@@ -1,7 +1,7 @@
 import React from "react"
 
 interface Props {
-  children: React.ReactElement
+  children: React.ReactNode
 }
 
 const Layout = ({ children }: Props) => {

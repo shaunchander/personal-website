@@ -2,7 +2,7 @@ import React from "react"
 
 interface Props {
   className?: string
-  children: React.ReactElement
+  children: React.ReactNode
 }
 
 const Section = ({ className = "", children }: Props) => {
