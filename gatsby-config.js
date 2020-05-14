@@ -1,9 +1,10 @@
 module.exports = {
   siteMetadata: {
     title: `Gatsby Syncore Starter`,
+    titleTemplate: "%s | Gatsby Syncore Starter",
     description: `Syncore's customized Gatsby starter based off of gatsby-typescript-tailwind-starter`,
     siteUrl: `https://www.example.com`,
-    defaultImg: `static/images/...`,
+    image: `static/images/...`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
