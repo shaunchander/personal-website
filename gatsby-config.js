@@ -15,13 +15,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-postcss",
-    {
-      resolve: "gatsby-plugin-purgecss",
-      options: {
-        tailwind: true,
-        purgeOnly: ["src/css/index.css"],
-      },
-    },
     `gatsby-plugin-typescript`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
@@ -49,7 +42,7 @@ module.exports = {
         },
       },
     },
-
-    `gatsby-plugin-offline`,
+    "gatsby-plugin-preload-link-crossorigin",
+    "gatsby-plugin-offline",
   ],
 }
