@@ -4,10 +4,12 @@ import React from "react"
 import Layout from "../components/Layout"
 import Section from "../components/Section"
 import Text from "../components/Text"
+import SEO from "../components/SEO"
 
 const index = () => {
   return (
     <Layout>
+      <SEO />
       <Section className="flex flex-col items-center justify-center h-screen">
         <svg
           width="75"
