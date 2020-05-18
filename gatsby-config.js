@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Syncore Starter`,
-    titleTemplate: "%s | Gatsby Syncore Starter",
+    title: `shaunchander.me`,
+    titleTemplate: "%s | shaunchander.me",
     description: `Syncore's customized Gatsby starter based off of gatsby-typescript-tailwind-starter`,
-    siteUrl: `https://www.example.com`,
-    image: `static/images/...`,
+    siteUrl: `https://www.shaunchander.me`,
+    image: `static/images/thumbnail.png`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -22,13 +22,13 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `shaunchander.me`,
+        short_name: `shaunchander.me`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#2F323A`,
+        theme_color: `#1D976C`,
         display: `minimal-ui`,
-        // icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
+        icon: `src/images/syncore.png`,
       },
     },
     {
