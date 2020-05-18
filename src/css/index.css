@@ -1,3 +1,27 @@
+@font-face {
+  font-family: "Jost";
+  src: url("../../static/fonts/jost-400-book-webfont.woff2") format("woff2"),
+    url("../../static/fonts/jost-400-book-webfont.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../../static/fonts/jost-500-medium-webfont.woff2") format("woff2"),
+    url("../../static/fonts/jost-500-medium-webfont.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Jost";
+  src: url("../../static/fonts/jost-700-bold-webfont.woff2") format("woff2"),
+    url("../../static/fonts/jost-700-bold-webfont.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+
 @tailwind base;
 
 @tailwind components;

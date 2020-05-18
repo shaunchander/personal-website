@@ -5,7 +5,7 @@ interface Props {
 }
 
 const Layout = ({ children }: Props) => {
-  return <main>{children}</main>
+  return <main className="font-jost text-gunmetalDark">{children}</main>
 }
 
 export default Layout

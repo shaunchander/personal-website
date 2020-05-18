@@ -7,7 +7,9 @@ interface Props {
 
 const Section = ({ className = "", children }: Props) => {
   return (
-    <section className={`container mx-auto ${className}`}>{children}</section>
+    <section className={`container mx-auto p-6 ${className}`}>
+      {children}
+    </section>
   )
 }
 
