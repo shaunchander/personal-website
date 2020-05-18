@@ -70,3 +70,5 @@ yarn-error.log
 
 # Linaria cache
 .linaria-cache
+# Local Netlify folder
+.netlify
