@@ -3,7 +3,7 @@ module.exports = {
     title: `shaunchander.me`,
     titleTemplate: "%s | shaunchander.me",
     description: `Syncore's customized Gatsby starter based off of gatsby-typescript-tailwind-starter`,
-    siteUrl: `https://www.shaunchander.me`,
+    siteUrl: `https://dev2.shaunchander.me`,
     image: `static/images/thumbnail.png`,
   },
   plugins: [
