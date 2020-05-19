@@ -31,6 +31,7 @@ const Button = ({ children, url, variant, className = "" }: Props) => {
       </Link>
     )
   }
+  return null
 }
 
 export default Button

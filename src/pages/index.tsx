@@ -6,8 +6,12 @@ import Section from "../components/Section"
 import Text from "../components/Text"
 import SEO from "../components/SEO"
 import Button from "../components/Button"
+import Div100vh from "react-div-100vh"
 
 import { motion } from "framer-motion"
+
+// Static assets
+import Background from "../images/background.svg"
 
 const index = () => {
   return (
@@ -16,51 +20,78 @@ const index = () => {
         description="Hey I'm Shaun Chander! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!"
         title="Homepage"
       />
-      <Section className="flex flex-col items-center justify-center h-screen md:items-start">
-        <motion.div
-          initial={{ scale: 1.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{ type: "spring", stiffness: 250, damping: 100 }}
-        >
-          <Text
-            variant="h1"
-            className="flex items-center mb-4 text-4xl font-bold md:text-6xl"
+
+      <Div100vh className="relative overflow-hidden">
+        <Section className="flex flex-col items-center justify-center h-full md:items-start">
+          <motion.div
+            initial={{ scale: 1.5, opacity: 0 }}
+            animate={{ scale: 1, opacity: 1 }}
+            transition={{
+              type: "spring",
+              stiffness: 250,
+              damping: 100,
+            }}
           >
-            <motion.div
-              animate={{
-                x: [0, -3, 3, 0, 0],
-                y: [0, 3, -3, 0, 0],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                loop: Infinity,
-              }}
+            <Text
+              variant="h1"
+              className="flex items-center justify-center mb-4 text-4xl font-bold md:justify-start md:text-6xl"
             >
-              <span>👋</span>
-            </motion.div>
-            <span>
-              , I'm <span className="text-syncore">Shaun</span>
-            </span>
-          </Text>
-          <Text variant="h2" className="text-xl font-medium text-center">
-            Director at{" "}
-            <a
-              href="https://syn-core.com"
-              className="text-syncore hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
+              <motion.div
+                animate={{
+                  x: [0, -3, 3, 0, 0],
+                  y: [0, 3, -3, 0, 0],
+                }}
+                transition={{
+                  duration: 2,
+                  ease: "easeInOut",
+                  loop: Infinity,
+                }}
+              >
+                <span>👋</span>
+              </motion.div>
+              <span>
+                , I'm <span className="text-syncore">Shaun</span>
+              </span>
+            </Text>
+            <Text
+              variant="h2"
+              className="text-xl font-medium text-center md:text-left"
             >
-              Syncore
-            </a>
-            , web developer, and student.
-          </Text>
-          <div className="grid gap-4 mt-6 md:grid-cols-2 md:gap-6 md:mt-8">
-            <Button variant="primary">Get In Touch</Button>
-            <Button variant="secondary">Learn More</Button>
-          </div>
-        </motion.div>
-      </Section>
+              Director at{" "}
+              <a
+                href="https://syn-core.com"
+                className="text-syncore hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Syncore
+              </a>
+              , web developer, and student.
+            </Text>
+            <div className="flex flex-col items-center mt-6 md:mt-8 md:items-start md:flex-row">
+              <Button
+                url="/contact"
+                variant="primary"
+                className="mb-4 md:mb-0 md:mr-4"
+              >
+                Get In Touch
+              </Button>
+
+              <Button url="/about" variant="secondary">
+                Learn More
+              </Button>
+            </div>
+          </motion.div>
+          <motion.img
+            initial={{ x: "20vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 250, damping: 100 }}
+            className="hidden md:absolute md:inset-y-0 md:right-0 md:h-screen md:block"
+            src={Background}
+            alt=""
+          />
+        </Section>
+      </Div100vh>
     </Layout>
   )
 }
