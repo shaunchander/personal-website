@@ -16,7 +16,11 @@ const Text = ({ variant = "p", className = "", children }: Props) => {
   }
 
   if (variant === "h3") {
-    return <h3 className={`${className}`}>{children}</h3>
+    return (
+      <h3 className={`${className} text-4xl font-bold md:text-5xl`}>
+        {children}
+      </h3>
+    )
   }
 
   if (variant === "h4") {
