@@ -19,75 +19,66 @@ const index = () => {
         description="Hey I'm Shaun Chander! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!"
         title="Homepage"
       />
-
       <Section className="flex flex-col items-center justify-center h-full md:items-start">
-        <motion.div
-          initial={{ scale: 1.5, opacity: 0 }}
-          animate={{ scale: 1, opacity: 1 }}
-          transition={{
-            type: "spring",
-            stiffness: 250,
-            damping: 100,
-          }}
+        <Text
+          variant="h1"
+          className="flex items-center justify-center mb-4 text-4xl font-bold md:justify-start md:text-6xl"
         >
-          <Text
-            variant="h1"
-            className="flex items-center justify-center mb-4 text-4xl font-bold md:justify-start md:text-6xl"
+          <motion.div
+            animate={{
+              x: [0, -3, 3, 0, 0],
+              y: [0, 3, -3, 0, 0],
+            }}
+            transition={{
+              duration: 2,
+              ease: "easeInOut",
+              loop: Infinity,
+            }}
           >
-            <motion.div
-              animate={{
-                x: [0, -3, 3, 0, 0],
-                y: [0, 3, -3, 0, 0],
-              }}
-              transition={{
-                duration: 2,
-                ease: "easeInOut",
-                loop: Infinity,
-              }}
-            >
-              <span>👋</span>
-            </motion.div>
-            <span>
-              , I'm <span className="text-syncore">Shaun</span>
-            </span>
-          </Text>
-          <Text
-            variant="h2"
-            className="text-xl font-medium text-center md:text-left"
+            <span>👋</span>
+          </motion.div>
+          <span>
+            , I'm <span className="text-syncore">Shaun</span>
+          </span>
+        </Text>
+        <Text
+          variant="h2"
+          className="text-xl font-medium text-center md:text-left"
+        >
+          Director at{" "}
+          <a
+            href="https://syn-core.com"
+            className="text-syncore hover:underline"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Director at{" "}
-            <a
-              href="https://syn-core.com"
-              className="text-syncore hover:underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Syncore
-            </a>
-            , web developer, and student.
-          </Text>
-          <div className="flex flex-col items-center mt-6 md:mt-8 md:items-start md:flex-row">
-            <Button
-              url="/contact"
-              variant="primary"
-              className="mb-4 md:mb-0 md:mr-4"
-            >
-              Get In Touch
-            </Button>
+            Syncore
+          </a>
+          , web developer, and student.
+        </Text>
+        <div className="flex flex-col items-center mt-6 md:mt-8 md:items-start md:flex-row">
+          <Button
+            url="/contact"
+            variant="primary"
+            className="mb-4 md:mb-0 md:mr-4"
+          >
+            Get In Touch
+          </Button>
 
-            <Button url="/about" variant="secondary">
-              Learn More
-            </Button>
-          </div>
-        </motion.div>
-        <motion.img
-          initial={{ x: "20vw" }}
-          animate={{ x: 0 }}
-          transition={{ type: "spring", stiffness: 250, damping: 100 }}
-          className="hidden md:absolute md:inset-y-0 md:right-0 md:h-screen md:block"
-          src={Background}
-          alt=""
-        />
+          <Button url="/about" variant="secondary">
+            Learn More
+          </Button>
+        </div>
+        <div className="hidden md:block">
+          <motion.img
+            initial={{ x: "20vw" }}
+            animate={{ x: 0 }}
+            transition={{ type: "spring", stiffness: 250, damping: 100 }}
+            className="md:absolute md:inset-y-0 md:right-0 md:h-screen"
+            src={Background}
+            alt=""
+          />
+        </div>
       </Section>
     </Layout>
   )
