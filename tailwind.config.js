@@ -14,7 +14,7 @@ module.exports = {
         jost: ["Jost", "sans-serif"],
       },
       screens: {
-        sm: 400,
+        sm: "400px",
       },
     },
   },

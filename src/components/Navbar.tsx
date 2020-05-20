@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 
 // Component imports
 import Section from "./Section"
@@ -9,11 +9,14 @@ import NavLink from "./NavLink"
 const Navbar = () => {
   const [open, toggleOpen] = useCycle(false, true)
   return (
-    <motion.nav className="absolute inset-0" animate={open ? "open" : "closed"}>
-      <Section className="relative z-10">
+    <motion.nav animate={open ? "open" : "closed"}>
+      <Section className="relative">
+        &nbsp;
         <motion.button
-          onClick={() => toggleOpen()}
-          className="focus:outline-none active:outline-none"
+          onClick={() => {
+            toggleOpen()
+          }}
+          className="absolute z-10 focus:outline-none active:outline-none"
         >
           <span className="sr-only">Menu</span>
           <motion.div
@@ -42,22 +45,42 @@ const Navbar = () => {
           open: { top: 0 },
         }}
         className="fixed inset-x-0 w-full h-full bg-syncore"
+        transition={{ type: "spring", stiffness: 50, damping: 15 }}
         style={{ top: "-100vh" }}
-        transition={{ transition: { ease: "circIn", duration: 0.5 } }}
       >
         <Section className="h-full">
           <motion.ul
             variants={{
               open: {
-                transition: { delayChildren: 0.5, staggerChildren: 0.25 },
+                transition: { delayChildren: 0.9, staggerChildren: 0.25 },
               },
             }}
             className="flex flex-col justify-center h-full text-4xl font-extrabold text-white uppercase lg:text-6xl"
           >
-            <NavLink to="/">🏠 Home</NavLink>
-            <NavLink to="/about">🧑 About</NavLink>
-            <NavLink to="/projects">📈 Projects</NavLink>
-            <NavLink to="/contact">💬 Contact</NavLink>
+            <NavLink to="/">
+              <span role="img" aria-label="house">
+                🏠
+              </span>{" "}
+              Home
+            </NavLink>
+            <NavLink to="/about">
+              <span role="img" aria-label="person">
+                🧑
+              </span>{" "}
+              About
+            </NavLink>
+            <NavLink to="/projects">
+              <span role="img" aria-label="chart">
+                📈
+              </span>{" "}
+              Projects
+            </NavLink>
+            <NavLink noMb to="/contact">
+              <span role="img" aria-label="chat bubble">
+                💬
+              </span>{" "}
+              Contact
+            </NavLink>
           </motion.ul>
         </Section>
       </motion.div>

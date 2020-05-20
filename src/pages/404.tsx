@@ -7,20 +7,26 @@ import Text from "../components/Text"
 import Button from "../components/Button"
 
 import { motion } from "framer-motion"
+import ZoomIn from "../components/ZoomIn"
 
 const NotFound = () => {
   return (
     <Layout>
       <Section className="flex flex-col items-center justify-center h-full">
-        <Text variant="h1" className="text-6xl font-extrabold text-syncore">
-          404
-        </Text>
-        <Text className="mt-4 mb-8 text-lg font-medium">
-          Well that wasn't found...
-        </Text>
-        <Button url="/" variant="primary">
-          Back to home
-        </Button>
+        <ZoomIn>
+          <Text
+            variant="h1"
+            className="text-6xl font-extrabold text-center text-syncore"
+          >
+            404
+          </Text>
+          <Text className="mt-4 mb-8 text-lg font-medium text-center">
+            Well that wasn't found...
+          </Text>
+          <Button url="/" variant="primary">
+            Back to home
+          </Button>
+        </ZoomIn>
       </Section>
     </Layout>
   )

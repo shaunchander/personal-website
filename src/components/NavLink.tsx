@@ -7,8 +7,8 @@ import { motion } from "framer-motion"
 
 interface Props {
   to: string
-  children: string
-  noMb: boolean
+  children: React.ReactNode
+  noMb?: boolean
 }
 
 const NavLink = ({ to, children, noMb }: Props) => {
@@ -16,8 +16,8 @@ const NavLink = ({ to, children, noMb }: Props) => {
     <motion.li
       className={noMb ? "" : "mb-4 lg:mb-8"}
       variants={{
-        closed: { x: -10, opacity: 0 },
-        open: { x: 0, opacity: 1 },
+        closed: { y: 10, opacity: 0 },
+        open: { y: 0, opacity: 1 },
       }}
     >
       <Link
