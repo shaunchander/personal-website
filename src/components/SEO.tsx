@@ -32,6 +32,7 @@ const SEO = ({ title, description, image }: Props) => {
 
   return (
     <Helmet title={seo.title} titleTemplate={titleTemplate}>
+      <html lang="en" />
       <meta name="description" content={seo.description} />
       <meta property="og:site_name" content="shaunchander.me" />
       <meta name="image" content={seo.image} />
