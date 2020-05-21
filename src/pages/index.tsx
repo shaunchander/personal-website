@@ -74,12 +74,17 @@ const index = () => {
             </Button>
           </div>
         </ZoomIn>
-        <div className="hidden overflow-hidden lg:block">
+        <div className="absolute inset-y-0 right-0 hidden overflow-hidden lg:block ">
           <motion.img
-            initial={{ x: "100vw" }}
+            initial={{ x: "40vw" }}
             animate={{ x: 0 }}
-            transition={{ type: "spring", stiffness: 100, damping: 100 }}
-            className="lg:absolute lg:inset-y-0 lg:right-0 lg:h-screen"
+            transition={{
+              type: "spring",
+              stiffness: 300,
+              damping: 40,
+              delay: 0.25,
+            }}
+            className="h-screen"
             src={Background}
             alt=""
           />
