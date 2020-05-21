@@ -1,6 +1,6 @@
 # Temporary Portfolio
 
-Welcome to my temporary portfolio, hosted straight out of a markdown file!
+https://syn-core.com is still being built! In the meantime you can view my portfolio here!
 
 https://spacedelta.net
 > Multipage website for SpaceDelta, a futuristic-themed Minecraft multiplayer server. Built with Gatsby.js, TailwindCSS, and GhostCMS.
