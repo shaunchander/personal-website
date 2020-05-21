@@ -67,7 +67,7 @@ const index = () => {
             </Button>
 
             <Button url="/about" variant="secondary">
-              Learn More
+              About me
             </Button>
           </div>
         </ZoomIn>
