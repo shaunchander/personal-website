@@ -16,10 +16,7 @@ import ZoomIn from "../components/ZoomIn"
 const index = () => {
   return (
     <Layout>
-      <SEO
-        description="Hey I'm Shaun Chander! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!"
-        title="Homepage"
-      />
+      <SEO title="Homepage" />
       <Section className="flex flex-col items-center justify-center h-full md:items-start">
         <ZoomIn>
           <Text
