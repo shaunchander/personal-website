@@ -7,11 +7,13 @@ import { motion } from "framer-motion"
 
 interface Props {
   to: string
-  children: React.ReactNode
+  children: string
   noMb?: boolean
+  emoji: any
+  emojiLabel: string
 }
 
-const NavLink = ({ to, children, noMb }: Props) => {
+const NavLink = ({ to, children, noMb, emoji, emojiLabel }: Props) => {
   return (
     <motion.li
       className={noMb ? "" : "mb-4 lg:mb-8"}
@@ -25,7 +27,16 @@ const NavLink = ({ to, children, noMb }: Props) => {
         className="transition-all duration-150 ease-out hover:text-syncoreLight"
         activeClassName="text-gunmetalDark hover:text-gunmetalDark"
       >
-        {children}
+        <motion.div whileHover="hover">
+          <motion.span
+            variants={{ hover: { x: 20 } }}
+            role="img"
+            aria-label={emojiLabel}
+          >
+            {emoji}
+          </motion.span>{" "}
+          {children}
+        </motion.div>
       </Link>
     </motion.li>
   )

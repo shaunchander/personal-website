@@ -12,29 +12,29 @@ const about = () => {
   return (
     <Layout>
       <SEO title="About me"></SEO>
-      <Section className="sm:mt-0 sm:flex sm:flex-col sm:justify-center sm:h-full">
+      <Section className="mt-16 sm:mt-0 sm:flex sm:flex-col sm:justify-center sm:h-full">
         <ZoomIn>
           <div className="lg:w-8/12 xl:w-1/2">
             <Text variant="h3">
               <span className="text-syncore">About me</span>.
             </Text>
-            <p className="mt-6 mb-4 lg:text-lg">
+            <Text className="mt-6 mb-4">
               Hey, I’m Shaun! I’m a company owner, web developer, and premed
               student the University of Wisconsin-Madison. I’m an avid
               JavaScript developer with a passion for the JAMStack, I currently
               work with Gatsby.js, Next.js, GraphQL, Netlify, Vercel, Node.js,
               and lambda functions to build high performance websites!
-            </p>
-            <p className="mb-4 lg:text-lg">
+            </Text>
+            <Text className="mb-4">
               Syncore LLC is my web design firm, we are a five-membered team
               centered around building modern websites for startups and private
               clients using the bleeding edge technologies like Gatsby.js among
               others from the JAMStack.
-            </p>
-            <p className="lg:text-lg">
+            </Text>
+            <Text>
               <strong>
                 That’s all I had to say, feel free to{" "}
-                <Link to="/portfolio" className="text-syncore hover:underline">
+                <Link to="/projects" className="text-syncore hover:underline">
                   check out my projects
                 </Link>{" "}
                 or{" "}
@@ -43,7 +43,7 @@ const about = () => {
                 </Link>{" "}
                 if you’d like to get a website made or just to talk 😄
               </strong>
-            </p>
+            </Text>
           </div>
         </ZoomIn>
       </Section>

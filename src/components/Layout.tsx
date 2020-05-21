@@ -4,8 +4,6 @@ import React from "react"
 import Navbar from "./Navbar"
 import Div100Vh from "react-div-100vh"
 
-import { motion } from "framer-motion"
-
 interface Props {
   children: React.ReactNode
 }
@@ -13,7 +11,7 @@ interface Props {
 const Layout = ({ children }: Props) => {
   return (
     <Div100Vh className="flex flex-col min-h-screen overflow-x-hidden leading-relaxed font-jost text-gunmetalDark">
-      <header className="sticky inset-x-0 top-0 z-50">
+      <header className="fixed inset-x-0 top-0 z-50 w-full h-16 bg-white md:bg-transparent">
         <Navbar />
       </header>
       <main className="flex-1">{children}</main>

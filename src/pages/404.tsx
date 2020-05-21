@@ -6,7 +6,6 @@ import Section from "../components/Section"
 import Text from "../components/Text"
 import Button from "../components/Button"
 
-import { motion } from "framer-motion"
 import ZoomIn from "../components/ZoomIn"
 
 const NotFound = () => {

@@ -10,32 +10,37 @@ import Project from "../components/Project"
 // Static assets
 import SyncoreLogo from "../images/syncore_logo.svg"
 import DeepHelpLogo from "../images/deephelp_logo.svg"
+import ZoomIn from "../components/ZoomIn"
 
 const projects = () => {
   return (
     <Layout>
       <SEO title="My projects"></SEO>
-      <Section>
-        <div>
-          <Text variant="h3">
-            <span className="text-syncore">Projects</span>.
-          </Text>
-          <Text className="mt-6">
-            A collection of my previous, on-going, and upcoming projects!
-          </Text>
-        </div>
-        <div className="grid gap-8 mt-8 md:grid-cols-3 lg:mt-12">
-          <Project
-            name="Syncore LLC"
-            tenure="Jan. 2019 - Current"
-            thumbnail={SyncoreLogo}
-          ></Project>
-          <Project
-            name="DeepHelp"
-            tenure="Jan. 2019 - Jul. 2019"
-            thumbnail={DeepHelpLogo}
-          ></Project>
-        </div>
+      <Section className="mt-16">
+        <ZoomIn>
+          <div>
+            <Text variant="h3">
+              <span className="text-syncore">Projects</span>.
+            </Text>
+            <Text className="mt-6">
+              A collection of my previous, on-going, and upcoming projects!
+            </Text>
+          </div>
+          <div className="grid gap-8 mt-8 md:grid-cols-3 lg:mt-12">
+            <Project
+              name="Syncore LLC"
+              tenure="Jan. 2019 - Current"
+              thumbnail={SyncoreLogo}
+              position="Director"
+            ></Project>
+            <Project
+              name="DeepHelp"
+              tenure="Jan. 2019 - Jul. 2019"
+              thumbnail={DeepHelpLogo}
+              position="President of the Board of Directors"
+            ></Project>
+          </div>
+        </ZoomIn>
       </Section>
     </Layout>
   )

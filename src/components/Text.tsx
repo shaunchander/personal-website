@@ -35,7 +35,7 @@ const Text = ({ variant = "p", className = "", children }: Props) => {
     return <h6 className={`${className}`}>{children}</h6>
   }
 
-  return <p className={`${className}`}>{children}</p>
+  return <p className={`${className} lg:text-lg`}>{children}</p>
 }
 
 export default Text
