@@ -11,9 +11,23 @@ interface Props {
   noMb?: boolean
   emoji: any
   emojiLabel: string
+  isATag?: boolean
 }
 
-const NavLink = ({ to, children, noMb, emoji, emojiLabel }: Props) => {
+const NavLink = ({ to, children, noMb, emoji, emojiLabel, isATag }: Props) => {
+  const URL = ({ emoji, emojiLabel, children }: Props) => (
+    <motion.div whileHover="hover">
+      <motion.span
+        variants={{ hover: { x: 20 } }}
+        role="img"
+        aria-label={emojiLabel}
+      >
+        {emoji}
+      </motion.span>{" "}
+      {children}
+    </motion.div>
+  )
+
   return (
     <motion.li
       className={noMb ? "" : "mb-4 lg:mb-8"}
@@ -22,22 +36,28 @@ const NavLink = ({ to, children, noMb, emoji, emojiLabel }: Props) => {
         open: { y: 0, opacity: 1 },
       }}
     >
-      <Link
-        to={to}
-        className="transition-all duration-150 ease-out hover:text-syncoreLight"
-        activeClassName="text-gunmetalDark hover:text-gunmetalDark"
-      >
-        <motion.div whileHover="hover">
-          <motion.span
-            variants={{ hover: { x: 20 } }}
-            role="img"
-            aria-label={emojiLabel}
-          >
-            {emoji}
-          </motion.span>{" "}
-          {children}
-        </motion.div>
-      </Link>
+      {isATag ? (
+        <a
+          href={to}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="transition-all duration-150 ease-out hover:text-syncoreLight"
+        >
+          <URL emoji={emoji} emojiLabel={emojiLabel}>
+            {children}
+          </URL>
+        </a>
+      ) : (
+        <Link
+          to={to}
+          className="transition-all duration-150 ease-out hover:text-syncoreLight"
+          activeClassName="text-gunmetalDark hover:text-gunmetalDark"
+        >
+          <URL emoji={emoji} emojiLabel={emojiLabel}>
+            {children}
+          </URL>
+        </Link>
+      )}
     </motion.li>
   )
 }

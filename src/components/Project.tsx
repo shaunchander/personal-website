@@ -2,6 +2,7 @@ import React from "react"
 
 // Component imports
 import Text from "./Text"
+import { Link } from "gatsby"
 
 interface Props {
   thumbnail: string
@@ -13,12 +14,16 @@ interface Props {
 const Project = ({ thumbnail, name, tenure, position }: Props) => {
   return (
     <div>
-      <img src={thumbnail} alt={name} className="object-contain h-32 mx-auto" />
-      <div className="mt-4">
-        <Text className="mb-1 text-lg font-extrabold text-syncore">{name}</Text>
-        <Text>{tenure}</Text>
-        <Text>{position}</Text>
-      </div>
+      <Link>
+        <img src={thumbnail} alt={name} className="object-contain w-16 h-16" />
+        <div className="mt-4">
+          <Text className="mb-1 text-lg font-extrabold text-syncore">
+            {name}
+          </Text>
+          <p>{tenure}</p>
+          <p className="text-sm">{position}</p>
+        </div>
+      </Link>
     </div>
   )
 }

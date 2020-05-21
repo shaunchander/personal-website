@@ -61,8 +61,13 @@ const Navbar = () => {
             <NavLink to="/about" emoji="🧑" emojiLabel="person">
               About
             </NavLink>
-            <NavLink to="/projects" emoji="📈" emojiLabel="chart">
-              Projects
+            <NavLink
+              isATag
+              to="https://github.com/shaunchander/personal-website/blob/master/temporary-portfolio.md"
+              emoji="📂"
+              emojiLabel="chart"
+            >
+              Portfolio
             </NavLink>
             <NavLink noMb to="/contact" emoji="💬" emojiLabel="speech bubble">
               Contact

@@ -13,9 +13,10 @@ const ZoomIn = ({ children }: Props) => {
       animate={{ scale: 1, opacity: 1 }}
       transition={{
         type: "spring",
-        stiffness: 250,
-        damping: 100,
+        stiffness: 200,
+        damping: 40,
       }}
+      className="overflow-hidden"
     >
       {children}
     </motion.div>
