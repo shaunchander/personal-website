@@ -39,18 +39,32 @@ const Navbar = () => {
       </Section>
       <motion.div
         variants={{
-          closed: { top: "-100vh" },
-          open: { top: 0 },
+          closed: {
+            top: "-100vh",
+            transition: {
+              delay: 0.15,
+              type: "tween",
+              ease: [0.5, 0, 0.75, 0],
+              duration: 0.75,
+            },
+          },
+          open: {
+            top: 0,
+            transition: {
+              type: "tween",
+              ease: [0.25, 1, 0.5, 1],
+              duration: 0.75,
+            },
+          },
         }}
         className="fixed inset-x-0 w-full h-full bg-syncore"
-        transition={{ type: "spring", stiffness: 50, damping: 15 }}
         style={{ top: "-100vh" }}
       >
         <Section className="h-full">
           <motion.ul
             variants={{
               open: {
-                transition: { delayChildren: 0.9, staggerChildren: 0.25 },
+                transition: { delayChildren: 0.5, staggerChildren: 0.25 },
               },
             }}
             className="flex flex-col justify-center h-full text-4xl font-extrabold text-white uppercase lg:text-6xl"

@@ -16,23 +16,19 @@ interface Props {
 
 const NavLink = ({ to, children, noMb, emoji, emojiLabel, isATag }: Props) => {
   const URL = ({ emoji, emojiLabel, children }: Props) => (
-    <motion.div whileHover="hover">
-      <motion.span
-        variants={{ hover: { x: 20 } }}
-        role="img"
-        aria-label={emojiLabel}
-      >
+    <div>
+      <span role="img" aria-label={emojiLabel}>
         {emoji}
-      </motion.span>{" "}
+      </span>{" "}
       {children}
-    </motion.div>
+    </div>
   )
 
   return (
     <motion.li
       className={noMb ? "" : "mb-4 lg:mb-8"}
       variants={{
-        closed: { y: 10, opacity: 0 },
+        closed: { y: 35, opacity: 0 },
         open: { y: 0, opacity: 1 },
       }}
     >
