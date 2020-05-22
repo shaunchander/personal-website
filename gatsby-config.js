@@ -3,7 +3,7 @@ module.exports = {
     title: `shaunchander.me`,
     titleTemplate: "%s | shaunchander.me",
     description: `Hey I'm Shaun Chander! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!`,
-    siteUrl: `https://dev2.shaunchander.me`,
+    siteUrl: `https://shaunchander.me`,
     image: `images/thumbnail.png`,
   },
   plugins: [
