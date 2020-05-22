@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `shaunchander.me`,
     titleTemplate: "%s | shaunchander.me",
-    description: `Hey I'm Shaun Chander! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!`,
+    description: `Hey I'm Shaun! I'm a web developer, company owner, and pre-med student. Check out my website to see my bio, portfolio, and contact information!`,
     siteUrl: `https://shaunchander.me`,
     image: `images/thumbnail.png`,
   },
