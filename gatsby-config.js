@@ -43,6 +43,12 @@ module.exports = {
         },
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-123758920-2",
+      },
+    },
     "gatsby-plugin-preload-link-crossorigin",
     "gatsby-plugin-netlify",
     "gatsby-plugin-offline",

@@ -2,6 +2,7 @@ import React from "react"
 
 // Component imports
 import { Link } from "gatsby"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 import { motion } from "framer-motion"
 
@@ -33,7 +34,7 @@ const NavLink = ({ to, children, noMb, emoji, emojiLabel, isATag }: Props) => {
       }}
     >
       {isATag ? (
-        <a
+        <OutboundLink
           href={to}
           target="_blank"
           rel="noopener noreferrer"
@@ -42,7 +43,7 @@ const NavLink = ({ to, children, noMb, emoji, emojiLabel, isATag }: Props) => {
           <URL emoji={emoji} emojiLabel={emojiLabel}>
             {children}
           </URL>
-        </a>
+        </OutboundLink>
       ) : (
         <Link
           to={to}
