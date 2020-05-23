@@ -7,6 +7,7 @@ import SEO from "../components/SEO"
 import Text from "../components/Text"
 import { Link } from "gatsby"
 import ZoomIn from "../components/ZoomIn"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const about = () => {
   return (
@@ -34,9 +35,14 @@ const about = () => {
             <Text>
               <strong>
                 That’s all I had to say, feel free to{" "}
-                <Link to="/projects" className="text-syncore hover:underline">
+                <OutboundLink
+                  href="https://github.com/shaunchander/personal-website/blob/master/temporary-portfolio.md"
+                  className="text-syncore hover:underline"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   check out my projects
-                </Link>{" "}
+                </OutboundLink>{" "}
                 or{" "}
                 <Link to="/contact" className="text-syncore hover:underline">
                   get in touch with me
