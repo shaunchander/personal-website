@@ -15,7 +15,7 @@ const Contact = () => {
       <SEO title="Contact me"></SEO>
       <Section className="flex flex-col justify-center h-full">
         <ZoomIn>
-          <div className="md:w-8/12 xl:w-1/2">
+          <div className="md:w-8/12 xl:w-5/12">
             <Text variant="h3">
               <span className="text-syncore">Let's get in touch</span>.
             </Text>
