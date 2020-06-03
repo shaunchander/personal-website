@@ -18,7 +18,7 @@ const Navbar = () => {
         >
           <span className="sr-only">Menu</span>
           <motion.span
-            className="block w-8 h-1 mb-2 bg-white"
+            className="block w-8 h-1 mb-2"
             variants={{
               closed: { rotate: 0, y: 0, backgroundColor: `#2F323A` },
               open: { rotate: -45, y: 6, backgroundColor: `#ffffff` },
@@ -27,7 +27,7 @@ const Navbar = () => {
             &nbsp;
           </motion.span>
           <motion.span
-            className="block w-8 h-1 bg-white"
+            className="block w-8 h-1"
             variants={{
               closed: { rotate: 0, y: 0, backgroundColor: `#2F323A` },
               open: { rotate: 45, y: -6, backgroundColor: `#ffffff` },
