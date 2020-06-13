@@ -21,7 +21,7 @@ const about = () => {
             </Text>
             <Text className="mt-6 mb-4">
               Hey, I’m Shaun! I’m a company owner, web developer, and premed
-              student the University of Wisconsin-Madison. I’m an avid
+              student at the University of Wisconsin-Madison. I’m an avid
               JavaScript developer with a passion for the JAMStack, I currently
               work with Gatsby.js, Next.js, GraphQL, Netlify, Vercel, Node.js,
               and lambda functions to build high performance websites!
