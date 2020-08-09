@@ -2,6 +2,12 @@
 
 https://syn-core.com is still being built! In the meantime you can view my portfolio here!
 
+https://annieshi.me
+> A personal portfolio website for a freelance writer.
+
+https://streamline-group.org
+> A multipage website for an entertainment and services holdings company.
+
 https://spacedelta.net
 > Multipage website for SpaceDelta, a futuristic-themed Minecraft multiplayer server. Built with Gatsby.js, TailwindCSS, and GhostCMS.
 
