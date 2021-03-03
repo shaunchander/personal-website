@@ -2,6 +2,9 @@
 
 https://syn-core.com is still being built! In the meantime you can view my portfolio here!
 
+https://versatilenode.com
+> A multi-page for VersatileNode showcasing their services and company. 
+
 https://leadpromc.com
 > A professional landing page for LeadPro to showcase features and benefits for incoming partners. 
 
